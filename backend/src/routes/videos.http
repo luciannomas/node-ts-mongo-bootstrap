@@ -1,0 +1,30 @@
+@api = http://localhost:3003
+
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/60e347d93a1fe878eebeebc1
+
+###
+POST {{api}}/videos
+Content-type: application/json
+
+{
+    "url": "https://www.youtube.com/results?search_query=ecommerce+mern+stack",
+    "title": "fazt video",
+    "description": "this is a fatz video"
+}
+
+###
+DELETE {{api}}/videos/60e351d7b75a29025cf30fdc
+
+###
+PUT {{api}}/videos/60e347d93a1fe878eebeebc1
+Content-type: application/json
+
+{
+    "url": "https://www.youtube.com/results?search_query=ecommerce+mern+stack",
+    "title": "fazt new video one",
+    "description": "this is a fatz video"
+}
